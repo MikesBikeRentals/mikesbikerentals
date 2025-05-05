@@ -1,100 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIKE’S BIKE RENTALS | Watkins Glen, NY</title>
+  <title>Mike's Bike Rentals | Watkins Glen, NY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f5f5;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Watkins_Glen_State_Park_Falls_1.JPG/1920px-Watkins_Glen_State_Park_Falls_1.JPG') no-repeat center center;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Watkins_Glen_State_Park_Falls_1.JPG') no-repeat center center;
       background-size: cover;
-      height: 70vh;
+      height: 90vh;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 2px 2px 6px #000;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 2rem;
     }
     header h1 {
       font-size: 3rem;
-      background-color: rgba(0,0,0,0.5);
-      padding: 1rem 2rem;
-      border-radius: 5px;
+      margin: 0;
     }
-    nav {
-      background-color: #8B0000;
-      color: white;
-      text-align: center;
-      padding: 1rem;
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto 0;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1.5rem;
-      font-weight: bold;
-    }
-    section {
-      max-width: 1000px;
+    .section {
+      max-width: 1200px;
       margin: auto;
-      padding: 2rem;
+      padding: 3rem 1rem;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .flex img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .half {
+      flex: 1 1 45%;
     }
     h2 {
-      color: #8B0000;
+      color: #2c5d3f;
+      margin-top: 0;
     }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+    .form-box {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     iframe {
       width: 100%;
-      height: 450px;
       border: none;
       border-radius: 6px;
+    }
+    footer {
+      background: #2c5d3f;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>MIKE’S BIKE RENTALS</h1>
+  <div>
+    <h1>Mike's Bike Rentals</h1>
+    <p>Explore the Finger Lakes on two wheels – from waterfalls to wine trails, ride through adventure with us in Watkins Glen, NY.</p>
+  </div>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#trail">Catherine Valley Trail</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-  <h2>Discover the Finger Lakes by Bike</h2>
-  <p>Located in the heart of Watkins Glen, Mike’s Bike Rentals offers a gateway to the natural beauty of the Finger Lakes. Our bikes are perfect for exploring scenic destinations like the Wine Trail, Seneca Lake, and Watkins Glen State Park.</p>
+<section class="section">
+  <div class="flex">
+    <div class="half">
+      <img src="https://www.gofingerlakes.org/wp-content/uploads/2018/06/CVTbridge-web.jpg" alt="Catherine Valley Trail Bridge" />
+      <h2>Catharine Valley Trail</h2>
+      <p>Embark on a picturesque ride along the Catharine Valley Trail’s scenic route, winding through woodlands, streams, and charming towns. Our shop is just minutes from the trailhead.</p>
+    </div>
+    <div class="half">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Watkins_Glen_State_Park_Falls_1.JPG" alt="Watkins Glen Falls" />
+      <h2>Watkins Glen State Park</h2>
+      <p>Ride to the breathtaking Watkins Glen State Park, famous for its 19 waterfalls, deep gorges, and miles of natural beauty perfect for cycling and hiking enthusiasts.</p>
+    </div>
+  </div>
 </section>
 
-<section id="trail">
-  <h2>Catherine Valley Trail</h2>
-  <p>Running nearly 12 miles through lush forests, past streams, and beside vineyards, the Catherine Valley Trail is one of the most breathtaking bike routes in New York. Start your adventure just blocks from our shop!</p>
-  <iframe src="https://www.google.com/maps/d/embed?mid=1fJrtnwrMPQHt1Z3BP-RVyEsfBqNu3XE&ehbc=2E312F"></iframe>
-</section>
-
-<section id="contact">
-  <h2>Contact & Hours</h2>
-  <p><strong>Location:</strong> 108 12th St., Watkins Glen, NY</p>
-  <p><strong>Email:</strong> WGMikesBikesRentals@gmail.com</p>
-  <p><strong>Phone:</strong> (607) 319-6454</p>
-  <p><strong>Hours:</strong> 9 AM – 9PM, 7 days a week (seasonal)</p>
+<section class="section">
+  <div class="flex">
+    <div class="half form-box">
+      <h2>Request a Booking</h2>
+      <p>Use the form below to request a bike rental. We'll confirm availability and respond shortly.</p>
+      <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" height="700">Loading…</iframe>
+    </div>
+    <div class="half">
+      <h2>Find Us on the Map</h2>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fJrtnwrMPQHt1Z3BP-RVyEsfBqNu3XE&ehbc=2E312F" height="700"></iframe>
+    </div>
+  </div>
 </section>
 
 <footer>
-  &copy; 2025 Mike’s Bike Rentals – Explore the Finger Lakes on Two Wheels
+  &copy; 2025 Mike’s Bike Rentals – Ride the Finger Lakes with Confidence
 </footer>
 
 </body>
