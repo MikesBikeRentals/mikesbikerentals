@@ -3,43 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIKE’S BIKE RENTALS – Watkins Glen, NY</title>
+  <title>MIKE’S BIKE RENTALS | Watkins Glen, NY</title>
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: DM , serif text;
-      background: #f7f7f7;
+      background-color: #f9f9f9;
       color: #333;
     }
     header {
-      background-color: #fff;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 2px solid #ddd;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Watkins_Glen_State_Park_Falls_1.JPG/1920px-Watkins_Glen_State_Park_Falls_1.JPG') no-repeat center center;
+      background-size: cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
     }
-    h1 {
-      color: red;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 5px;
+    }
+    nav {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding: 2rem;
+    }
+    h2 {
+      color: #8B0000;
     }
     footer {
-      background: #eee;
+      background: #333;
+      color: white;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
     }
     iframe {
       width: 100%;
-      min-height: 600px;
+      height: 450px;
       border: none;
-    }
-    a {
-      color: #cc0000;
+      border-radius: 6px;
     }
   </style>
 </head>
@@ -47,41 +66,35 @@
 
 <header>
   <h1>MIKE’S BIKE RENTALS</h1>
-  <p>Watkins Glen, New York • At 108 12th Street • Seasonal Rentals Available</p>
 </header>
 
-<section>
-  <h2>About Us</h2>
-  <p>Originally founded by Mike Harvey, Mike’s Bike Rentals is now operated by Dick Swinnerton and proudly continues to serve locals and tourists alike from our location near the southern tip of Seneca Lake. Whether you're cruising the village or exploring the Finger Lakes trails, we’ve got the perfect ride for you.</p>
+<nav>
+  <a href="#about">About</a>
+  <a href="#trail">Catherine Valley Trail</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>Discover the Finger Lakes by Bike</h2>
+  <p>Located in the heart of Watkins Glen, Mike’s Bike Rentals offers a gateway to the natural beauty of the Finger Lakes. Our bikes are perfect for exploring scenic destinations like the Wine Trail, Seneca Lake, and Watkins Glen State Park.</p>
 </section>
 
-<section>
-  <h2>Our Bikes</h2>
-  <ul>
-   
-    <li>Electric Bikes (E-Bikes)</li>
-    <li>Pedal Bikes</li>
-    
-  </ul>
-  <p> Pricing varies by bike and duration — Just submit a request below!</p>
+<section id="trail">
+  <h2>Catherine Valley Trail</h2>
+  <p>Running nearly 12 miles through lush forests, past streams, and beside vineyards, the Catherine Valley Trail is one of the most breathtaking bike routes in New York. Start your adventure just blocks from our shop!</p>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1fJrtnwrMPQHt1Z3BP-RVyEsfBqNu3XE&ehbc=2E312F"></iframe>
 </section>
 
-<section>
-  <h2>Request a Booking</h2>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddb-TiVHvcW3Eom-Bet1LmaOrRAX7yKECmEbjDAbMNwKuUNg/viewform?embedded=true" width=*640" height=*1505" frameborder="0* marginheight=*0" marginwidth="0">Loading...</iframe>iframe>
-</section>
-
-<section>
-  <h2>Location & Contact</h2>
-  <p><strong>Address:</strong> 108 12th St., Watkins Glen, NY 14891</p>
-  <p><strong>Email:</strong> WGMikesBikesRentals@Gmail.com</p>
-  <p><strong>Phone:</strong> (607)-319-6454</p>
-  <p><a href="https://www.facebook.com/mikesbikerentals" target="_blank">Visit us on Facebook</a></p>
-  <p><a href="https://maps.google.com/?q=108+12th+St+Watkins+Glen+NY" target="_blank">Find us on Google Maps</a></p>
+<section id="contact">
+  <h2>Contact & Hours</h2>
+  <p><strong>Location:</strong> 108 12th St., Watkins Glen, NY</p>
+  <p><strong>Email:</strong> WGMikesBikesRentals@gmail.com</p>
+  <p><strong>Phone:</strong> (607) 319-6454</p>
+  <p><strong>Hours:</strong> 9 AM – 9PM, 7 days a week (seasonal)</p>
 </section>
 
 <footer>
-  &copy; 2025 Mike’s Bike Rentals | Designed with care for Watkins Glen tourists and riders
+  &copy; 2025 Mike’s Bike Rentals – Explore the Finger Lakes on Two Wheels
 </footer>
 
 </body>
