@@ -8,43 +8,42 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; font-family: 'Montserrat', sans-serif; background: #f7f7f7; color: #333; }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: #f7f7f7; color: #333; }
     header { position: relative; text-align: center; color: white; }
-    header img.hero { width: 100%; height: 90vh; object-fit: cover; filter: brightness(0.5); }
+    header img.hero { width: 100%; height: 90vh; object-fit: cover; filter: brightness(0.6); }
     .header-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
     .header-text h1 { font-size: 3rem; margin: 0; }
     .header-text p { font-size: 1.2rem; margin-top: 1rem; }
+    .logo { width: 180px; position: absolute; top: 20px; left: 20px; }
     .section { max-width: 1200px; margin: auto; padding: 3rem 1rem; }
-    .flex { display: flex; flex-wrap: wrap; gap: 2rem; }
+    .flex { display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; }
     .half { flex: 1 1 45%; }
     .flex img { width: 100%; border-radius: 8px; }
     h2 { color: #2c5d3f; margin-top: 0; }
     .form-box { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
     iframe { width: 100%; border: none; border-radius: 6px; }
     footer { background: #2c5d3f; color: white; text-align: center; padding: 1.5rem; }
-    .logo { width: 160px; position: absolute; top: 20px; left: 20px; }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="background.jpg" alt="Trail Background" class="hero" />
+  <img src="bkground.jpg" alt="Cyclists on Fall Trail" class="hero" />
   <img src="logo.png" alt="Mike's Bike Rentals Logo" class="logo" />
   <div class="header-text">
-    <h1>Mike's Bike Rentals</h1>
-    <p>Explore the Finger Lakes on two wheels – from waterfalls to wine trails</p>
+    <h1>Explore the Finger Lakes on Two Wheels</h1>
+    <p>Discover the beauty of the Finger Lakes by bike! Located near the Mind Trail and Watkins Glen State Park, we provide the perfect starting point for your exciting adventure.</p>
   </div>
 </header>
 
 <section class="section">
   <div class="flex">
     <div class="half">
-      <img src="CVTbridge-web.jpg" alt="Catherine Valley Trail Bridge" />
+      <img src="CvtTrail.jpg" alt="Catherine Valley Trail" />
     </div>
     <div class="half">
-      <h2>Catharine Valley Trail</h2>
-      <p>Embark on a picturesque ride along the Catharine Valley Trail’s scenic route, winding through woodlands, streams, and charming towns. Our shop is just minutes from the trailhead.</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.3015972337597!2d-76.8732092845302!3d42.38057297918613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d08cd71e2a17b5%3A0x8d74b7b94b87836b!2sCatherine%20Valley%20Trail!5e0!3m2!1sen!2sus!4v1681681698997!5m2!1sen!2sus" height="300"></iframe>
+      <h2>CATHARINE VALLEY TRAIL</h2>
+      <p>Embark on a picturesque ride along the Catharine Valley Trail’s scenic path that winds through woodlands and charming towns.</p>
     </div>
   </div>
 </section>
@@ -52,20 +51,26 @@
 <section class="section">
   <div class="flex">
     <div class="half">
-      <img src="Watkins_Glen_State_Park_Falls_1.JPG" alt="Watkins Glen Falls" />
+      <img src="wgstatprk.jpg" alt="Watkins Glen Falls" />
     </div>
     <div class="half">
-      <h2>Watkins Glen State Park</h2>
-      <p>Ride to the breathtaking Watkins Glen State Park, famous for its 19 waterfalls, deep gorges, and miles of natural beauty perfect for cycling and hiking enthusiasts.</p>
+      <h2>WATKINS GLEN STATE PARK</h2>
+      <p>Ride to the breathtaking Watkins Glen State Park, famous for its stunning gorges and cascading waterfalls.</p>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="form-box">
-    <h2>Request a Booking</h2>
-    <p>Use the form below to request a bike rental. We'll confirm availability and respond shortly.</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddb-TiVHvcW3Eom-Bet1LmaOrRAX7yKECmEbjDAbMNwKuUNg/viewform?embedded=true" height="1577">Loading…</iframe>
+  <div class="flex">
+    <div class="half form-box">
+      <h2>Request a Booking</h2>
+      <p>Use the form below to request a bike rental. We'll confirm availability and respond shortly.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddb-TiVHvcW3Eom-Bet1LmaOrRAX7yKECmEbjDAbMNwKuUNg/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <div class="half">
+      <h2>Reserve Your Bike</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.3015972337597!2d-76.8732092845302!3d42.38057297918613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d08cd71e2a17b5%3A0x8d74b7b94b87836b!2sCatherine%20Valley%20Trail!5e0!3m2!1sen!2sus!4v1681681698997!5m2!1sen!2sus" width="400" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
